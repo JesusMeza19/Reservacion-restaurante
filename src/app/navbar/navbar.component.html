@@ -1,15 +1,14 @@
 <nav class="navbar">
     <a href="#" class="logo">Restaurant</a>
-    <div class="nav-list">
+    <div class="nav-list" [ngClass]="{'mobile-menu' : isActive}">
         <ul>
-            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Reservations</a></li>
             <li><a href="#">Menu</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Contact us</a></li>
-            <li><a href="#">Log in</a></li> |
-            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Log in</a></li>
         </ul>
     </div>
-
+    <img src="https://cdn-icons-png.flaticon.com/512/660/660376.png" alt="menu" class="menu-desplegable" (click)="toggleClass()">
 </nav>
