@@ -51,7 +51,9 @@
     width: 35px;
 }
 
-
+.navbar .menu-desplegable:hover{
+    cursor: pointer;
+}
 
 @media screen and (max-width: 900px){
     .navbar{
