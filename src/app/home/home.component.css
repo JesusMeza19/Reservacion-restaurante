@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    background-color: black;
+    align-items: center;
+    height: 750px;
+}
+
+.container .refran{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+}
+
+.container .refran h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.484);
+}
+
+.container .refran p{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.484);
+}
+
+.container .refran hr{
+    color:white;
+    background-color: white;
+    border-color: white;
+}
