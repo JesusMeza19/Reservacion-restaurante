@@ -11,6 +11,7 @@ import { LogoutComponent } from './logout/logout.component';
 import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'admin', component: AdminComponent},
   {path: 'contact', component: ContactComponent},
