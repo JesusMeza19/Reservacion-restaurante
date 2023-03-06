@@ -6,7 +6,7 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.container{
+.espacio{
     background-image: url('https://static.vecteezy.com/system/resources/previews/001/959/920/non_2x/blurred-busy-restaurant-background-free-photo.JPG'); 
     background-repeat: no-repeat;
 	background-size: cover;
@@ -14,7 +14,7 @@
 	height: 100vh;
 }
 
-.container .refran{
+.espacio .refran{
     position: absolute;
 	background-color: rgba(0, 0, 0, 0.484);
 	padding: 10px;
@@ -27,17 +27,17 @@
     width: 500px;
 }
 
-.container .refran h1{
+.espacio .refran h1{
     color: white;
     border-radius: 12px;
 }
 
-.container .refran p{
+.espacio .refran p{
     color: white;
     border-radius: 12px;
 }
 
-.container .refran hr{
+.espacio .refran hr{
     color:white;
     background-color: white;
     border-color: white;
