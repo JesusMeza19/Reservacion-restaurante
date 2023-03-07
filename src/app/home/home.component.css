@@ -25,6 +25,8 @@
     align-items: center;
     text-align: center;
     width: 500px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 .espacio .refran h1{
