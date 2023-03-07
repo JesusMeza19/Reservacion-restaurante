@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { FoodComponent } from './food/food.component';
+import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FoodComponent } from './food/food.component';
     LoginComponent,
     LogoutComponent,
     AdminComponent,
-    FoodComponent
+    FoodComponent,
+    SocialmediaComponent
   ],
   imports: [
     BrowserModule,
