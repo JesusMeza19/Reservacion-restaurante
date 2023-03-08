@@ -6,12 +6,14 @@
 }
 
 .espacio{
-    background-image: url('https://static.vecteezy.com/system/resources/previews/001/959/920/non_2x/blurred-busy-restaurant-background-free-photo.JPG'); 
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/959/920/non_2x/blurred-busy-restaurant-background-free-photo.JPG');
     background-repeat: no-repeat;
-    align-items: center;
+    background-size: cover;
+    background-position: center center;
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -21,6 +23,7 @@
 }
 
 .espacio .conteiner-form{
+    border-radius: 15px;
     background-color: rgb(255, 255, 255);
     width: 80%;
     margin:auto;
