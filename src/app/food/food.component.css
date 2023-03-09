@@ -8,6 +8,11 @@
     text-transform: capitalize;
 }
 
+.space{
+   width: 100%;
+   height: 80px;
+}
+
 .container{
     max-width: 1200px;
     margin:0 auto;
