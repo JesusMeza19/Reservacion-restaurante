@@ -13,7 +13,6 @@ import { FormReserComponent } from './form-reser/form-reser.component';
 import { TablesMapComponent } from './tables-map/tables-map.component';
 import { MenuComponent } from './menu/menu.component';
 import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
 import { AdminComponent } from './admin/admin.component';
 import { FoodComponent } from './food/food.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
@@ -31,7 +30,6 @@ import { SocialmediaComponent } from './socialmedia/socialmedia.component';
     TablesMapComponent,
     MenuComponent,
     LoginComponent,
-    LogoutComponent,
     AdminComponent,
     FoodComponent,
     SocialmediaComponent
