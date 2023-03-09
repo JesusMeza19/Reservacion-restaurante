@@ -2,13 +2,29 @@
     <div class="body">
         <i class="fa-solid fa-user"></i>
         <h1>Login</h1>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div>
+        <form>
+            <div class="form-floating mb-3">
+                <input type="email" formControlName="email" class="form-control" placeholder="name@example.com">
+                <label>Email</label>
+                <!-- <span class="text-danger errorLabel">
+                    El <strong>correo</strong> es requerido
+                </span>
+                <span class="text-danger errorLabel">
+                    El <strong>correo</strong> es invalido
+                </span> -->
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" formControlName="password" class="form-control" placeholder="Password">
+                <label>Password</label>
+                <!-- <span class="text-danger errorLabel">
+                    La <strong>password</strong> es requerida
+                </span> -->
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-warning btn-lg" >Ingresar</button>
+            </div>
+            <p class="mt-3">No tienes cuenta? <a routerLink="/register">Registrar</a></p>
+            <a class="mt-3" routerLink="/recover_password">Recuperar Contraseña</a>
+        </form>
     </div>
 </div>

@@ -8,7 +8,7 @@
 .wrapper .body i{
     font-size: 150px;
     margin-bottom: 10px;
-    color: white;
+    color: black;
 }
 
 .body{
@@ -16,5 +16,6 @@
     max-width: 330px;
     padding: 30px;
     text-align: center;
-    background-color: blue;
+    background-color: white;
+    border-radius: 15px;
 }

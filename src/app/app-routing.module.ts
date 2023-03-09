@@ -8,6 +8,8 @@ import { FormReserComponent } from './form-reser/form-reser.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { NewUserComponent } from './new-user/new-user.component';
+import { RPasswordComponent } from './r-password/r-password.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -18,7 +20,9 @@ const routes: Routes = [
   {path: 'reservations', component: FormReserComponent},
   {path: 'login', component: LoginComponent},
   {path: 'menu', component: MenuComponent},
-  {path: 'food', component: FoodComponent}
+  {path: 'food', component: FoodComponent},
+  {path: 'recover_password', component: RPasswordComponent},
+  {path: 'register', component: NewUserComponent}
 
 ];
 

@@ -16,6 +16,8 @@ import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { FoodComponent } from './food/food.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
+import { RPasswordComponent } from './r-password/r-password.component';
+import { NewUserComponent } from './new-user/new-user.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { SocialmediaComponent } from './socialmedia/socialmedia.component';
     LoginComponent,
     AdminComponent,
     FoodComponent,
-    SocialmediaComponent
+    SocialmediaComponent,
+    RPasswordComponent,
+    NewUserComponent
   ],
   imports: [
     BrowserModule,
