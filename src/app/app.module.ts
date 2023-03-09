@@ -18,6 +18,7 @@ import { FoodComponent } from './food/food.component';
 import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { RPasswordComponent } from './r-password/r-password.component';
 import { NewUserComponent } from './new-user/new-user.component';
+import { ValidEmailComponent } from './valid-email/valid-email.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NewUserComponent } from './new-user/new-user.component';
     FoodComponent,
     SocialmediaComponent,
     RPasswordComponent,
-    NewUserComponent
+    NewUserComponent,
+    ValidEmailComponent
   ],
   imports: [
     BrowserModule,

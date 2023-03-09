@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { RPasswordComponent } from './r-password/r-password.component';
+import { ValidEmailComponent } from './valid-email/valid-email.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path: 'menu', component: MenuComponent},
   {path: 'food', component: FoodComponent},
   {path: 'recover_password', component: RPasswordComponent},
-  {path: 'register', component: NewUserComponent}
+  {path: 'register', component: NewUserComponent},
+  {path: 'valid_email', component: ValidEmailComponent}
 
 ];
 
