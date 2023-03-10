@@ -1,0 +1,25 @@
+table{
+    color: black;
+
+}
+
+td{
+    width: 2em;
+    height: 2em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+.selected{
+    color:greenyellow;
+
+}
+
+.ocupado{
+    color: red;
+}
+
+td:hover{
+    background:  orange;
+}

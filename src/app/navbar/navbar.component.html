@@ -1,1 +1,16 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <a routerLink="/home" class="logo">Restaurant</a>
+    <!--Condicional para que se cambie la classe del div que contiene todo el listado de las opciones-->
+    <div class="nav-list" [ngClass]="{'mobile-menu' : isActive}">
+        <ul>
+            <li class="active"><a routerLink="/home">Home</a></li>
+            <li><a routerLink="/reservations">Reservations</a></li>
+            <li><a routerLink="/menu">Menu</a></li>
+            <li><a routerLink="/about_us">About us</a></li>
+            <li><a routerLink="/contact">Contact us</a></li>
+            <li><a routerLink="/login">Log in</a></li>
+        </ul>
+    </div>
+    <!--Cambiar este link por la imagen que se necesita | se coloco una accion apra que cuando se le de click active una funcion en el typescript-->
+    <img src="assets/img/menu.png" alt="menu" class="menu-desplegable" (click)="toggleClass()">
+</nav>

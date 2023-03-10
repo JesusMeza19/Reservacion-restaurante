@@ -1,0 +1,26 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper .body i{
+    font-size: 150px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.body{
+    width: 100%;
+    max-width: 330px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.espacio{
+    width: 100%;
+   height: 80px;
+}

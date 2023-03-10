@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.espacio{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/959/920/non_2x/blurred-busy-restaurant-background-free-photo.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.espacio .conteiner-form .info-form{
+    margin: 30px;
+    
+}
+
+.espacio .conteiner-form{
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin:auto;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.espacio .conteiner-form h2{
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.espacio .conteiner-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.espacio .conteiner-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.espacio .conteiner-form a i{
+    color: orange;
+    margin-right: 10px;
+
+}
+
+.espacio .conteiner-form form{
+    margin: 30px;
+}
+
+.espacio .conteiner-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 16px;
+    font-size: 15px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 6px;
+}
+
+.espacio .conteiner-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline:0px;
+    background: orange;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: all 20ms ease;
+}
+
+.espacio .conteiner-form .btn-enviar:active {
+    background: #c70000;
+    color: white;
+}
+

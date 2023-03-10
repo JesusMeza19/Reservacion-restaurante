@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.espacio{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/959/920/non_2x/blurred-busy-restaurant-background-free-photo.JPG'); 
+    background-repeat: no-repeat;
+	background-size: cover;
+	align-items: center;
+	height: 100vh;
+}
+
+.espacio .refran{
+    position: absolute;
+	background-color: rgba(0, 0, 0, 0.484);
+	padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.espacio .refran h1{
+    color: white;
+    border-radius: 12px;
+}
+
+.espacio .refran p{
+    color: white;
+    border-radius: 12px;
+    text-align: justify;
+    margin: 20px;
+}
+
+.espacio .refran hr{
+    color:white;
+    background-color: white;
+    border-color: white;
+}
+
+.boton {
+    margin-top: 30px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100px;
+	height: 30px;
+	background: #141414;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton.cuatro::after {
+	content: "";
+	width: 1px;
+	height: 1px;
+	background: none;
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transition: .3s ease-in-out all;
+	border-radius: 100px;
+	transform-origin: center;
+}
+
+.boton.cuatro:hover::after {
+	transform: scale(120);
+	background: #cc1010;
+}
+
