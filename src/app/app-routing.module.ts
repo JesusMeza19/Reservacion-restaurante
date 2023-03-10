@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
-import { AdminComponent } from './admin/admin.component';
 import { ContactComponent } from './contact/contact.component';
 import { CreateReservationComponent } from './create-reservation/create-reservation.component';
 import { CrudComponent } from './crud/crud.component';
@@ -17,7 +16,6 @@ import { ValidEmailComponent } from './valid-email/valid-email.component';
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
-  {path: 'admin', component: AdminComponent},
   {path: 'contact', component: ContactComponent},
   {path: 'about_us', component: AboutusComponent},
   {path: 'reservations', component: ReservationComponent},
