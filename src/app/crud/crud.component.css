@@ -1,0 +1,18 @@
+i{
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button{
+    float: right;
+}
+
+img{
+    height: 50px;
+    width: 70px;
+}
+
+.espacio{
+    width: 100%;
+   height: 80px;
+}

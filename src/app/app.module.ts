@@ -19,6 +19,8 @@ import { SocialmediaComponent } from './socialmedia/socialmedia.component';
 import { RPasswordComponent } from './r-password/r-password.component';
 import { NewUserComponent } from './new-user/new-user.component';
 import { ValidEmailComponent } from './valid-email/valid-email.component';
+import { CrudComponent } from './crud/crud.component';
+import { CreateReservationComponent } from './create-reservation/create-reservation.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ValidEmailComponent } from './valid-email/valid-email.component';
     SocialmediaComponent,
     RPasswordComponent,
     NewUserComponent,
-    ValidEmailComponent
+    ValidEmailComponent,
+    CrudComponent,
+    CreateReservationComponent
   ],
   imports: [
     BrowserModule,
