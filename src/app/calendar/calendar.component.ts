@@ -1,60 +1,79 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import * as moment from 'moment';
 
 @Component({
   selector: 'app-calendar',
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.css']
 })
-export class CalendarComponent implements OnInit{
-  @ViewChild('calendar') calendar: ElementRef;
-  @ViewChild('date') date: ElementRef;
-  @ViewChild('daysContainer') daysContainer: ElementRef;
-  @ViewChild('prev') prev: ElementRef;
-  @ViewChild('next') next: ElementRef;
-  @ViewChild('todayBtn') todayBtn: ElementRef;
-  @ViewChild('gotoBtn') gotoBtn: ElementRef;
-  @ViewChild('dateInput') dateInput: ElementRef;
-  @ViewChild('eventDay') eventDay: ElementRef;
-  @ViewChild('eventDate') eventDate: ElementRef;
-  @ViewChild('eventsContainer') eventsContainer: ElementRef;
-  @ViewChild('addEventBtn') addEventBtn: ElementRef;
-  @ViewChild('addEventWrapper') addEventWrapper: ElementRef;
-  @ViewChild('addEventCloseBtn') addEventCloseBtn: ElementRef;
-  @ViewChild('addEventTitle') addEventTitle: ElementRef;
-  @ViewChild('addEventFrom') addEventFrom: ElementRef;
-  @ViewChild('addEventTo') addEventTo: ElementRef;
-  @ViewChild('addEventSubmit') addEventSubmit: ElementRef;
+export class CalendarComponent implements OnInit {
+  fecha_actual =new Date();
+  month= this.fecha_actual.getMonth()+2;
+  year = this.fecha_actual.getFullYear();
 
-  today: Date = new Date();
-  activeDay: number;
-  month: number = this.today.getMonth();
-  year: number = this.today.getFullYear();
-  months: string[] = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
+  week: any = [
+    "Lunes",
+    "Martes",
+    "Miercoles",
+    "Jueves",
+    "Viernes",
+    "Sabado",
+    "Domingo"
   ];
-  eventsArr: any[] = [];
 
-  constructor() {}
+
+  monthSelect: any[] = [];
+  dateSelect: any;
+  dateValue: any;
+
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
-    this.showCalendar();
+    this.getDaysFromDate(this.month, this.year)
   }
 
-  showCalendar() {
-    // Implementar el código del método showCalendar() aquí, utilizando las propiedades y los métodos que hayas creado.
+  getDaysFromDate(month: number, year: number) {
+
+    const startDate = moment.utc(`${year}/${month}/01`)
+    const endDate = startDate.clone().endOf('month')
+    this.dateSelect = startDate;
+
+    const diffDays = endDate.diff(startDate, 'days', true)
+    const numberDays = Math.round(diffDays);
+
+    const arrayDays = Object.keys([...Array(numberDays)]).map((a: any) => {
+      a = parseInt(a) + 1;
+      const dayObject = moment(`${year}-${month}-${a}`);
+      return {
+        name: dayObject.format("dddd"),
+        value: a,
+        indexWeek: dayObject.isoWeekday()
+      };
+    });
+
+    this.monthSelect = arrayDays;
   }
 
-  addEvent() {
-    // Implementar el código del método addEvent() aquí, utilizando las propiedades y los métodos
+  changeMonth(flag: number) {
+    if (flag < 0) {
+      const prevDate = this.dateSelect.clone().subtract(1, "month");
+      this.getDaysFromDate(prevDate.format("MM"), prevDate.format("YYYY"));
+    } else {
+      const nextDate = this.dateSelect.clone().add(1, "month");
+      this.getDaysFromDate(nextDate.format("MM"), nextDate.format("YYYY"));
+    }
+  }
+
+  clickDay(day: { value: any; }) {
+    const monthYear = this.dateSelect.format('YYYY-MM')
+    const parse = `${monthYear}-${day.value}`
+    const objectDate = moment(parse)
+    this.dateValue = objectDate;
+
+
+  }
+
 }
